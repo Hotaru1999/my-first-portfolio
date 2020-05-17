@@ -5,9 +5,15 @@ html(lang="ja")
     title Tubuyaitter
   body
     h1 Tubuyaitter
+    a(href="/logout") ログアウト
     h2 つぶやき
     form(method="post" action="/posts")
       div
         textarea(name="content", cols="30", rows="10")
       div
         button(type="submit") つぶやく
+
+    h2 つぶやき一覧
+    each content in contents
+      p #{content}
+      hr
