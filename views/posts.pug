@@ -1,0 +1,13 @@
+doctype html
+html(lang="ja")
+  head
+    meta(charset="UTF-8")
+    title Tubuyaitter
+  body
+    h1 Tubuyaitter
+    h2 つぶやき
+    form(method="post" action="/posts")
+      div
+        textarea(name="content", cols="30", rows="10")
+      div
+        button(type="submit") つぶやく
